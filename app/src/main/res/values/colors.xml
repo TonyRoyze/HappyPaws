@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#000000</color>
+    <color name="primary_content">#808080</color>
+    <color name="primary_dark">#000000</color>
+    <color name="primary_light">#1a1a1a</color>
+
+    <color name="secondary">#bf56ff</color>
+    <color name="secondary_content">#350056</color>
+    <color name="secondary_dark">#ac23ff</color>
+    <color name="secondary_light">#d289ff</color>
+
+    <color name="background">#eaf5ee</color>
+    <color name="foreground">#fafdfb</color>
+    <color name="border">#404040</color>
+
+    <color name="copy">#fbfbfb</color>
+    <color name="copy_light">#d9d9d9</color>
+    <color name="copy_lighter">#a6a6a6</color>
+
+    <color name="success">#56ff56</color>
+    <color name="warning">#ffff56</color>
+    <color name="error">#ff5656</color>
+    <color name="success_content">#005600</color>
+    <color name="warning_content">#565600</color>
+    <color name="error_content">#560000</color>
+</resources>
+

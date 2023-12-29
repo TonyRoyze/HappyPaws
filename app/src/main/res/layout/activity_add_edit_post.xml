@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:padding="30dp"
+    tools:context=".Activities.Owner.AddEditPost">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ic_back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_back_arrow"
+            android:backgroundTint="@color/copy" />
+
+        <ImageView
+            android:id="@+id/ic_profile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/ic_profile"/>
+
+    </RelativeLayout>
+
+    
+
+    <RelativeLayout
+        android:id="@+id/post_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="16dp">
+
+        <Spinner
+            android:id="@+id/pet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:backgroundTint="@color/secondary_light"/>
+
+        <EditText
+            android:id="@+id/post_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:textColorHint="@color/copy"
+            android:backgroundTint="@color/copy"
+            android:layout_below="@+id/pet"
+            android:layout_marginTop="20dp"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:textColor="@color/copy" />
+
+        <EditText
+            android:id="@+id/post_location"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:fontFamily="@font/regular"
+            android:textColorHint="@color/copy"
+            android:backgroundTint="@color/copy"
+            android:layout_below="@+id/post_phone"
+            android:layout_marginTop="20dp"
+            android:gravity="top"
+            android:hint="Address"
+            android:inputType="text|textMultiLine"
+            android:textColor="@color/copy" />
+
+        <EditText
+            android:id="@+id/post_services"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/post_location"
+            android:fontFamily="@font/regular"
+            android:textColorHint="@color/copy"
+            android:backgroundTint="@color/copy"
+            android:layout_marginTop="20dp"
+            android:gravity="top"
+            android:hint="Services"
+            android:inputType="text|textMultiLine"
+            android:textColor="@color/copy" />
+
+        <Button
+            android:id="@+id/post_start_date"
+            style="?android:spinnerStyle"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:textColorHint="@color/copy"
+            android:backgroundTint="@color/copy"
+            android:layout_below="@+id/post_services"
+            android:layout_marginTop="20dp"
+            android:onClick="openStartDatePicker"
+            android:text="DEC 27 2023"
+            android:textColor="@color/copy" />
+
+        <Button
+            android:id="@+id/post_end_date"
+            style="?android:spinnerStyle"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/post_services"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/regular"
+            android:textColorHint="@color/copy"
+            android:backgroundTint="@color/copy"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/post_start_date"
+            android:onClick="openEndDatePicker"
+            android:text="DEC 27 2023"
+            android:textColor="@color/copy" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_add_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:layout_below="@+id/post_end_date"
+            android:backgroundTint="@color/secondary"
+            android:textColor="@color/copy"
+            android:layout_marginTop="20dp"
+            android:text="Post" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

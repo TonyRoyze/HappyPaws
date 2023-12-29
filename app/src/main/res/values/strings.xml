@@ -1,0 +1,10 @@
+<resources>
+    <string name="update">Update</string>
+    <string name="pending">Pending</string>
+    <string name="in_progress">Accepted</string>
+    <string name="post_details">Your Posts</string>
+    <string name="pet_details">Your Pets</string>
+    <string name="app_name">Happy Paws</string>
+    <string name="apply">Apply</string>
+    <string name="applied">Applied</string>
+</resources>

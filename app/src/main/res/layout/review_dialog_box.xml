@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/bold"
+            android:text="Leave a Review"
+            android:textColor="@color/primary"
+            android:textSize="25dp" />
+
+        <RatingBar
+            android:id="@+id/post_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/post_review"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/post_rating"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/primary"
+            android:fontFamily="@font/regular"
+            android:gravity="top"
+            android:hint="Review"
+            android:inputType="text|textMultiLine"
+            android:textColor="@color/primary"
+            android:textColorHint="@color/primary" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/post_review"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/primary_light"
+                android:fontFamily="@font/regular"
+                android:text="Cancel"
+                android:textColor="@color/primary_content" />
+
+            <Button
+                android:id="@+id/btn_post_review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/btn_cancel"
+                android:backgroundTint="@color/secondary_light"
+                android:fontFamily="@font/regular"
+                android:text="Post"
+                android:textColor="@color/secondary_content" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

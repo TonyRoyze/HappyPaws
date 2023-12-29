@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:padding="30dp"
+    tools:context=".Activities.Shared.RegisterPage">
+
+    <ImageView
+        android:id="@+id/ic_back_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_back_arrow"
+        android:backgroundTint="@color/copy" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/form"
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="@color/primary"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ic_back_arrow"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        app:strokeColor="@color/border"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:id="@+id/user_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="16dp">
+
+
+            <EditText
+                android:id="@+id/user_name"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/copy"
+                android:textColorHint="@color/copy"
+                android:backgroundTint="@color/copy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name" />
+
+            <EditText
+                android:id="@+id/user_email"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/copy"
+                android:textColorHint="@color/copy"
+                android:backgroundTint="@color/copy"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_name"
+                android:layout_marginTop="20dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+
+            <EditText
+                android:id="@+id/user_phone"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/copy"
+                android:textColorHint="@color/copy"
+                android:backgroundTint="@color/copy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_email"
+                android:layout_marginTop="20dp"
+                android:hint="Phone"
+                android:inputType="phone" />
+
+            <Spinner
+                android:id="@+id/user_type"
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/copy"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_phone"
+                android:layout_marginTop="20dp" />
+
+
+            <EditText
+                android:id="@+id/user_address"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/copy"
+                android:textColorHint="@color/copy"
+                android:backgroundTint="@color/copy"
+                android:layout_height="100dp"
+                android:layout_below="@+id/user_type"
+                android:layout_marginTop="20dp"
+                android:gravity="top"
+                android:hint="Address"
+                android:inputType="text|textMultiLine" />
+
+            <EditText
+                android:id="@+id/user_password"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/copy"
+                android:textColorHint="@color/copy"
+                android:backgroundTint="@color/copy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_address"
+                android:layout_marginTop="20dp"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/user_repassword"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/copy"
+                android:textColorHint="@color/copy"
+                android:backgroundTint="@color/copy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_password"
+                android:layout_marginTop="20dp"
+                android:hint="Re-Enter Password"
+                android:inputType="textPassword" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_add_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:layout_below="@+id/user_repassword"
+                android:backgroundTint="@color/secondary"
+                android:textColor="@color/copy"
+                android:layout_marginTop="20dp"
+                android:text="Register" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>

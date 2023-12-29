@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="@color/primary"
+    tools:context=".Activities.Owner.AddEditPet">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ic_back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_back_arrow"
+            android:backgroundTint="@color/copy" />
+
+        <ImageView
+            android:id="@+id/ic_profile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/ic_profile"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pet_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="16dp">
+
+
+        <EditText
+            android:id="@+id/pet_name"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/copy"
+            android:textColorHint="@color/copy"
+            android:backgroundTint="@color/copy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name" />
+
+
+
+        <EditText
+            android:id="@+id/pet_age"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/copy"
+            android:textColorHint="@color/copy"
+            android:backgroundTint="@color/copy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pet_name"
+            android:layout_marginTop="20dp"
+            android:hint="Age"
+            android:inputType="number" />
+
+        <RelativeLayout
+            android:id="@+id/spinners"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/pet_age">
+            <Spinner
+                android:backgroundTint="@color/copy"
+                android:id="@+id/pet_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:id="@+id/pet_sex"
+                android:layout_width="wrap_content"
+                android:backgroundTint="@color/copy"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_toRightOf="@+id/pet_type" />
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/pet_breed"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/copy"
+            android:textColorHint="@color/copy"
+            android:backgroundTint="@color/copy"
+            android:layout_below="@+id/spinners"
+            android:layout_marginTop="20dp"
+            android:hint="Breed" />
+
+        <EditText
+            android:id="@+id/pet_color"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/copy"
+            android:textColorHint="@color/copy"
+            android:backgroundTint="@color/copy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pet_breed"
+            android:layout_marginTop="20dp"
+            android:hint="Color" />
+
+        <EditText
+            android:id="@+id/pet_note"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/copy"
+            android:textColorHint="@color/copy"
+            android:backgroundTint="@color/copy"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/pet_color"
+            android:layout_marginTop="20dp"
+            android:hint="Note"
+            android:inputType="text|textMultiLine" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_add_pet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:layout_below="@+id/pet_note"
+            android:backgroundTint="@color/secondary"
+            android:textColor="@color/copy"
+            android:layout_marginTop="20dp"
+            android:text="Add" />
+    </RelativeLayout>
+
+</RelativeLayout>
